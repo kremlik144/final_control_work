@@ -28,7 +28,7 @@
 ![Task_4](/Kennel_account_system/Images/4.png)
 
 
-5. Выложить историю ![команд](/Kennel_account_system/CommandsUbuntu.md) в терминале ubuntu
+5. Выложить историю [команд](https://github.com/kremlik144/final_control_work/blob/main/Kennel_account_system/CommandsUbuntu.md) в терминале ubuntu
 
 6. Нарисовать диаграмму в которой есть родительский класс, домашние
 животные и вьючные животные, в составы которых в случае домашних
