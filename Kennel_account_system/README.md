@@ -18,6 +18,11 @@
 3. Подключить дополнительный репозиторий MySQL. Установить любой пакет
 из этого репозитория.
 
+![Task_3_1](/Kennel_account_system/Images/3-1.png)
+
+![Task_3_2](/Kennel_account_system/Images/3-2.png)
+
+
 4. Установить и удалить deb-пакет с помощью dpkg.
 
 5. Выложить в терминале ubuntu
