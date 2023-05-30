@@ -30,10 +30,12 @@
 
 5. Выложить историю [команд](https://github.com/kremlik144/final_control_work/blob/main/Kennel_account_system/CommandsUbuntu.md) в терминале ubuntu
 
-6. Нарисовать диаграмму в которой есть родительский класс, домашние
+6. [Нарисовать диаграмму в которой](https://github.com/kremlik144/final_control_work/blob/main/Kennel_account_system/Animal_diagram.drawio) есть родительский класс, домашние
 животные и вьючные животные, в составы которых в случае домашних
 животных войдут классы: собаки, кошки, хомяки, а в класс вьючные животные
 войдут: Лошади, верблюды и ослы.
+
+![Task_6](/Kennel_account_system/Images/6.png)
 
 7. В подключенном MySQL репозитории создать базу данных “Друзья
 человека”
