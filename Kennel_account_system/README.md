@@ -85,6 +85,12 @@ VALUES ('Кошки', 2),
        ('Собаки', 2),  
        ('Хомяки', 2); 
 
+```
+
+9. Заполнить низкоуровневые таблицы именами(животных), командами
+которые они выполняют и датами рождения
+
+```sql
 CREATE TABLE cats 
 (       
     Id INT AUTO_INCREMENT PRIMARY KEY, 
@@ -94,11 +100,97 @@ CREATE TABLE cats
     Genus_id int,
     Foreign KEY (Genus_id) REFERENCES home_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
 );
+
+INSERT INTO cats (Name, Birthday, Commands, Genus_id)
+VALUES ('Васька', '2016-05-09', 'кс-кс', 1),
+	   ('Маська', '2016-06-10', 'можно', 1),  
+	   ('Ириска', '2016-07-11', 'нельзя', 1); 
+
+
+CREATE TABLE dogs 
+(       
+    Id INT AUTO_INCREMENT PRIMARY KEY, 
+    Name VARCHAR(20), 
+    Birthday DATE,
+    Commands VARCHAR(50),
+    Genus_id int,
+    Foreign KEY (Genus_id) REFERENCES home_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+INSERT INTO dogs (Name, Birthday, Commands, Genus_id)
+VALUES ('Тузик', '2010-01-02', 'можно, нельзя, сидеть', 2),
+	   ('Мурзик', '2011-02-03', 'лежать, сидеть, голос', 2),  
+	   ('Биба', '2012-03-04', 'лапу, умри, фас', 2), 
+	   ('Боба', '2013-04-05', 'рядом, лежать, голос', 2);
+
+
+CREATE TABLE hamsters 
+(       
+    Id INT AUTO_INCREMENT PRIMARY KEY, 
+    Name VARCHAR(20), 
+    Birthday DATE,
+    Commands VARCHAR(50),
+    Genus_id int,
+    Foreign KEY (Genus_id) REFERENCES home_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+INSERT INTO hamsters (Name, Birthday, Commands, Genus_id)
+VALUES ('Пуговка', '2022-10-12', 'кушац', 3),
+	   ('Пипка', '2022-11-12', 'не кушац', 3),  
+	   ('Шальной', '2022-11-11', 'спи', 3), 
+	   ('Соння', '2023-02-10', 'не спи', 3);
+
+
+CREATE TABLE horses 
+(       
+    Id INT AUTO_INCREMENT PRIMARY KEY, 
+    Name VARCHAR(20), 
+    Birthday DATE,
+    Commands VARCHAR(50),
+    Genus_id int,
+    Foreign KEY (Genus_id) REFERENCES packed_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+INSERT INTO horses (Name, Birthday, Commands, Genus_id)
+VALUES ('Мамба', '2018-05-03', 'быстрее, стоп, медленнее', 1),
+	   ('Мумба', '2019-06-04', 'ко мне, кушац, можно', 1),  
+	   ('Чудо', '2020-07-06', 'бегом, ползком, развернись', 1), 
+	   ('Юда', '2021-08-07', 'бегом, шагом, прыжок', 1);
+
+
+CREATE TABLE donkeys 
+(       
+    Id INT AUTO_INCREMENT PRIMARY KEY, 
+    Name VARCHAR(20), 
+    Birthday DATE,
+    Commands VARCHAR(50),
+    Genus_id int,
+    Foreign KEY (Genus_id) REFERENCES packed_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+INSERT INTO donkeys (Name, Birthday, Commands, Genus_id)
+VALUES ('Игорь', '2019-04-08', 'быстрее, стоп, медленнее', 2),
+	   ('Славик', '2020-03-09', 'быстрее, стоп, медленнее', 2),  
+	   ('Терентий', '2021-02-10', 'быстрее, стоп, медленнее', 2), 
+	   ('Марк', '2022-01-11', 'быстрее, стоп, медленнее', 2);
+
+
+CREATE TABLE camels 
+(       
+    Id INT AUTO_INCREMENT PRIMARY KEY, 
+    Name VARCHAR(20), 
+    Birthday DATE,
+    Commands VARCHAR(50),
+    Genus_id int,
+    Foreign KEY (Genus_id) REFERENCES packed_animals (Id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+INSERT INTO camels (Name, Birthday, Commands, Genus_id)
+VALUES ('Арарат', '2018-04-04', 'быстрее, стоп, медленнее', 3),
+	   ('Карлик', '2019-03-05', 'быстрее, стоп, медленнее', 3),  
+	   ('Громадина', '2020-02-06', 'быстрее, стоп, медленнее', 3), 
+	   ('Нормальдесный', '2021-01-07', 'быстрее, стоп, медленнее', 3);
 ```
-
-9. Заполнить низкоуровневые таблицы именами(животных), командами
-которые они выполняют и датами рождения
-
 
 10. Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой
 питомник на зимовку. Объединить таблицы лошади, и ослы в одну таблицу.
