@@ -252,9 +252,9 @@ LEFT JOIN yang_animal ya ON ya.Name = hm.Name
 LEFT JOIN home_animals ha ON ha.Id = hm.Genus_id;
 ```
 
-13. Создать класс с Инкапсуляцией методов и наследованием по диаграмме.
+13. Создать [класс](https://github.com/kremlik144/final_control_work/tree/main/Kennel_account_system/System/src/Model) с Инкапсуляцией методов и наследованием по диаграмме.
 
-14. Написать программу, имитирующую работу реестра домашних животных
+14. Написать [программу](https://github.com/kremlik144/final_control_work/tree/main/Kennel_account_system/System/src), имитирующую работу реестра домашних животных
 В программе должен быть реализован следующий функционал:    
 	- завести новое животное    
 	- определять животное в правильный класс    
@@ -262,7 +262,7 @@ LEFT JOIN home_animals ha ON ha.Id = hm.Genus_id;
 	- обучить животное новым командам    
 	- реализовать навигацию по меню    
 	
-15. Создайте класс Счетчик, у которого есть метод add(), увеличивающий̆
+15. Создайте [класс Счетчик](https://github.com/kremlik144/final_control_work/blob/main/Kennel_account_system/System/src/Controller/Counter.java), у которого есть метод add(), увеличивающий̆
 значение внутренней̆ int переменной̆ на 1 при нажатии “Завести новое
 животное” Сделайте так, чтобы с объектом такого типа можно было работать в
 блоке try-with-resources. Нужно бросить исключение, если работа с объектом
